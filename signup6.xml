@@ -1,0 +1,77 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <!-- EditText for Name -->
+    <EditText
+        android:id="@+id/editTextName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="16dp"
+        android:background="@android:drawable/edit_text"
+        android:inputType="textPersonName"
+        android:hint="Name" />
+
+    <!-- EditText for Email -->
+    <EditText
+        android:id="@+id/editTextEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextName"
+        android:layout_marginBottom="16dp"
+        android:background="@android:drawable/edit_text"
+        android:inputType="textEmailAddress"
+        android:hint="Email" />
+
+    <!-- EditText for Phone Number -->
+    <EditText
+        android:id="@+id/editTextPhone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextEmail"
+        android:layout_marginBottom="16dp"
+        android:background="@android:drawable/edit_text"
+        android:inputType="phone"
+        android:hint="Phone Number" />
+
+    <!-- EditText for Username -->
+    <EditText
+        android:id="@+id/editTextUsername"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextPhone"
+        android:layout_marginBottom="24dp"
+        android:background="@android:drawable/edit_text"
+        android:inputType="text"
+        android:hint="Username" />
+
+    <!-- Submit Button -->
+    <Button
+        android:id="@+id/buttonSubmit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextUsername"
+        android:text="Submit"
+        android:layout_marginBottom="16dp" />
+
+    <!-- Checkbox -->
+    <CheckBox
+        android:id="@+id/checkboxPrivacy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/buttonSubmit" />
+
+    <!-- Privacy Text -->
+    <TextView
+        android:id="@+id/textPrivacy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/checkboxPrivacy"
+        android:layout_toRightOf="@id/checkboxPrivacy"
+        android:layout_alignTop="@id/checkboxPrivacy"
+        android:text="I accept the privacy and policy"
+        android:textSize="14sp" />
+
+</RelativeLayout>
